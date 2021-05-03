@@ -34,7 +34,19 @@ Frida script purpose is to extract from the running app a list of all ObjC metho
 - [FOX - Fix Objective-C XREFs in Ghidra](https://security.humanativaspa.it/fox-fix-objectivec-xrefs-in-ghidra/)
 
 ## Screenshots
+
+- XREF added to msgSend call
+
 ![XREF added to msgSend call](images/msgSendXREF.PNG)
+
+- Inline comment added to msgSend function
+
 ![Inline comment added to msgSend function](images/commentMsgSendInternal.PNG)
+
+- Inline comment with potential XREFs
+
 ![Inline comment with potential XREFs](images/commentPotentialXREFsInline.PNG)
+
+- Plate comment with potential XREFs
+
 ![Plate comment with potential XREFs](images/plateCommentPotentialXREFs.PNG)
