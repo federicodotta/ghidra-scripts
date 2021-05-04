@@ -45,7 +45,7 @@
  * - Launch analyzeHeadless with -postScript FOX.java
  * - Optionally supply the output of the attached Frida script after the script 
  *   name (ex. -postScript FOX.java fridaOutput.txt)
- *- Navigate newly updated XREFs, PRE and plate comments, if applicable
+ * - Navigate newly updated XREFs, PRE and plate comments, if applicable
  *
  * Caveats:
  * - The list of *objc_msgSend* family functions may be incomplete (you can
@@ -100,12 +100,7 @@ public class FOX extends GhidraScript {
 	
 	// Allowed values 0, 1 and 2
 	static int DEBUG_LEVEL = 0;
-		
-	// TODO
-	// Add threads
-	// Add time to debug prints to estimate plugin duration
-	// Add prints to evaluate time
-	
+			
 	@Override
 	public void run() throws Exception	{
 		
@@ -368,7 +363,8 @@ public class FOX extends GhidraScript {
 		
 	}
 	
-	// 	TODO
+	// This method populate a list of all the functions that call one or more times one of the msgSend functions.
+	// This list is used to avoid decompiling functions that don't call any msgSend function, in order to optimize the performances.
 	public void findFunctionsCallingMsgSend() {
 		
 		List<Function> tempFunctionsCallingMsgSend = new LinkedList<Function>();
