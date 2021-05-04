@@ -1,7 +1,7 @@
 # ghidra-scripts
 [![](https://img.shields.io/github/stars/federicodotta/ghidra-scripts.svg?color=yellow)](https://github.com/federicodotta/ghidra-scripts)
 [![](https://img.shields.io/github/forks/federicodotta/ghidra-scripts.svg?color=green)](https://github.com/federicodotta/ghidra-scripts)
-[![](https://img.shields.io/github/watchers/federicodotta/ghidra-scripts.svg?color=red)](https://github.com/federicodotta/ghidra-scripts)
+[![](https://img.shields.io/github/issues-raw/federicodotta/ghidra-scripts.svg?color=red)](https://github.com/federicodotta/ghidra-scripts/issues)
 [![](https://img.shields.io/badge/license-MIT%20License-red.svg?color=lightgray)](https://opensource.org/licenses/MIT) 
 [![](https://img.shields.io/badge/twitter-apps3c-blue.svg)](https://twitter.com/apps3c)
 
