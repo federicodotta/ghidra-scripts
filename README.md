@@ -11,4 +11,5 @@ A collection of my Ghidra scripts.
 * **[FOX](https://github.com/federicodotta/ghidra-scripts/tree/master/FOX/)**: This script locates all calls to *objc_msgSend* family functions, tries to infer the actual method that gets referenced, and adds cross-references, potential cross-references and useful comments.
 
 ## Misc
+* **[ListingLover](https://github.com/federicodotta/ghidra-scripts/tree/master/ListingLover/)**: this script adds the pseudocode as comment to the disassembly listing. It can be used from the GUI or in headless mode.
 * **[ExportToGzf](https://github.com/federicodotta/ghidra-scripts/tree/master/ExportToGzf/)**: this script exports a Ghidra project in gzf format. It can be used from the GUI or in headless mode.
