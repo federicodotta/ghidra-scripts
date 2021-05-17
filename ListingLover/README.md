@@ -19,7 +19,7 @@ Tested with Ghidra v9.2.3.
 - Federico Dotta -  Principal Security Analyst at HN Security
 
 ## References
-- [ListingLover - Add pseudocode to disassemby listing in Ghidra](https://security.humanativaspa.it/listinglover-add-pseudocode-to-disassemby-listing-in-ghidra/)
+- [ListingLover – Add pseudo-code to Ghidra disassembly](https://security.humanativaspa.it/listinglover-add-pseudocode-to-ghidra-disassembly/)
 
 ## Screenshots
 - Disassembly listing with pseudocode as POST comment
