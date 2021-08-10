@@ -36,6 +36,7 @@ public class SwiftDemangler2 extends GhidraScript {
 		if(ghidra2FridaService == null) {
 			PluginTool pluginTool = state.getTool();
 			ghidra2FridaService = pluginTool.getService(Class.forName("ghidra2frida.Ghidra2FridaService"));
+			println("ghidra2frida service initialized");
 		}
 		
 		Method ghidra2FridaCallExportedFunction = Class.forName("ghidra2frida.Ghidra2FridaService").getMethod("callExportedFunction", java.lang.String.class, java.lang.String[].class);		
@@ -54,7 +55,8 @@ public class SwiftDemangler2 extends GhidraScript {
 			
 			String f_name = f.getName();
 			
-			//println(f_name);
+			if(debug)
+				println("Processing: " + f_name);
 			
 			// Is it a mangled name?
 			if(!(f_name.startsWith("_$") || f_name.startsWith("$s") || f_name.startsWith("_T") || f_name.startsWith("__T")))
@@ -65,8 +67,6 @@ public class SwiftDemangler2 extends GhidraScript {
 			
 			
 			String previous_comment = f.getComment();
-		    if(previous_comment == null)
-		        previous_comment = "";
 
 		    try {
 		    			    
@@ -82,7 +82,10 @@ public class SwiftDemangler2 extends GhidraScript {
 			    for(int l=1; l < lines+1; l++) 
 			        signature_full = signature_full.substring(0, (l*58)+(l-1)) + "\n" + signature_full.substring((l*58)+(l-1));
 	
-			    f.setComment(previous_comment + "\n" + signature_full);
+			    if(previous_comment == null)
+			    	f.setComment(signature_full);
+			    else
+			    	f.setComment(previous_comment + "\n" + signature_full);
 			    
 			    
 		    } catch(Exception e) {
