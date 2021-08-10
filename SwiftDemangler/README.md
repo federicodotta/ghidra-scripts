@@ -2,6 +2,12 @@
 
 SwiftDemangler demangles swift function names using ghidra2frida bridge, executing the demangling code directly on the mobile iOS device. The output is added to a plate comment on all the Swift functions of the binary. The Java code is based on Ghidra Ninja swift_demangler.py (https://github.com/ghidraninja/ghidra_scripts/blob/master/swift_demangler.py) and the Frida demangle code has been taken from https://codeshare.frida.re/@neil-wu/fridaswiftdump/.
 
+The script is supplied in three different versions:
+
+1. SwiftDemangler.java: Ghidra script in Java
+2. swift_demangler.java: Ghidra script in Python
+3. SwiftDemangler2.java: Ghidra script in Java that uses Java reflection (more details in the article in the references)
+
 Tested with Ghidra v10.0.1.
 
 ## Usage
