@@ -5,7 +5,7 @@ SwiftDemangler demangles swift function names using ghidra2frida bridge, executi
 The script is supplied in three different versions:
 
 1. SwiftDemangler.java: Ghidra script in Java
-2. swift_demangler.java: Ghidra script in Python
+2. swift_demangler.python: Ghidra script in Python
 3. SwiftDemangler2.java: Ghidra script in Java that uses Java reflection (more details in the article in the references)
 
 Tested with Ghidra v10.0.1.
